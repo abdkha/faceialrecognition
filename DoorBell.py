@@ -3,7 +3,7 @@ import os
 import numpy as np
 
 # Path to the folder containing the training images
-train_folder = 'C:/users/Tabish/Desktop/4AI3 - Artifical Intelligence/Project/train_images/'
+train_folder = 'train_images/'
 
 # Load the pre-trained face detector
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -48,7 +48,7 @@ def recognize_faces(image):
 train_model()
 
 # Load and process the test image
-test_image_path = 'C:/users/Tabish/Desktop/4AI3 - Artifical Intelligence/Project/test_image.png'
+test_image_path = 'test_image.jpg'
 test_image = cv2.imread(test_image_path)
 result_image = recognize_faces(test_image)
 
